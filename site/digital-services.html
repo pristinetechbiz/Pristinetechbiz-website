@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Digital Services — PristineTech Biz Ltd</title>
+<meta name="description" content="Website design, web development, social media management and advertising, and brand growth solutions from PristineTech Biz Ltd.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">PT</span> PristineTech Biz</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="construction-renovation.html">Construction</a>
+      <a href="electrical-services.html">Electrical</a>
+      <a href="digital-services.html" aria-current="page">Digital</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="service-hero dgt">
+  <div class="wrap">
+    <span class="eyebrow">DGT — Digital Services</span>
+    <h1>We Power What Matters</h1>
+    <p class="lede">Websites and social presence built to bring in real inquiries, not just look good — from design through ongoing growth.</p>
+    <ul class="service-list">
+      <li>Website design</li>
+      <li>Web development</li>
+      <li>Social media management</li>
+      <li>Social media advertising</li>
+      <li>Brand growth solutions</li>
+    </ul>
+  </div>
+</section>
+
+<section class="gallery-section">
+  <div class="wrap">
+    <span class="eyebrow">Work gallery</span>
+    <div class="gallery-grid" id="digital-gallery"></div>
+  </div>
+</section>
+
+<section class="inquiry">
+  <div class="wrap">
+    <span class="eyebrow">Get a quote</span>
+    <h2 style="font-size:1.6rem;margin-top:.5rem;">Tell us about your brand</h2>
+    <form class="inquiry-card" action="https://formspree.io/f/xqpzepgv" method="POST">
+      <input type="hidden" name="_subject" value="Inquiry: Digital Services">
+      <div class="field">
+        <label for="d-name">Your name</label>
+        <input id="d-name" type="text" name="name" required>
+      </div>
+      <div class="field">
+        <label for="d-email">Email</label>
+        <input id="d-email" type="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="d-message">Tell us about the work</label>
+        <textarea id="d-message" name="message" placeholder="Website, social media, ads..."></textarea>
+      </div>
+      <button class="submit-btn" type="submit">Send inquiry</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="logo"><span class="logo-mark">PT</span> PristineTech Biz Ltd</span>
+    <nav class="foot-links">
+      <a href="construction-renovation.html">Construction</a>
+      <a href="electrical-services.html">Electrical</a>
+      <a href="digital-services.html">Digital</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span class="foot-note">© <span id="year"></span> PristineTech Biz Ltd</span>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const digitalImages = [
+    { src: "https://placehold.co/600x450/2fe6a0/0b0d10?text=Digital+01", alt: "Digital work placeholder 1" },
+    { src: "https://placehold.co/600x450/12b886/0b0d10?text=Digital+02", alt: "Digital work placeholder 2" },
+    { src: "https://placehold.co/600x450/2fe6a0/0b0d10?text=Digital+03", alt: "Digital work placeholder 3" },
+    { src: "https://placehold.co/600x450/12b886/0b0d10?text=Digital+04", alt: "Digital work placeholder 4" },
+  ];
+  renderGallery('digital-gallery', digitalImages);
+</script>
+</body>
+</html>
