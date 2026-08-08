@@ -1,1 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — PristineTech Biz Ltd</title>
+<meta name="description" content="Get in touch with PristineTech Biz Ltd for construction, electrical, or digital services.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
 
+<header class="site-header">
+  <div class="wrap">
+    <a class="logo" href="index.html"><span class="logo-mark">PT</span> PristineTech Biz</a>
+    <button class="nav-toggle" aria-expanded="false" aria-label="Toggle menu">☰</button>
+    <nav class="main-nav">
+      <a href="index.html">Home</a>
+      <a href="construction-renovation.html">Construction</a>
+      <a href="electrical-services.html">Electrical</a>
+      <a href="digital-services.html">Digital</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding-bottom:1rem;">
+  <div class="wrap">
+    <span class="eyebrow">Contact</span>
+    <h1 style="font-size:clamp(2.2rem,5vw,3.6rem);">Let's talk about<br>the job.</h1>
+    <p class="lede">Not sure which service fits? Send a general inquiry here and we'll route it to the right team.</p>
+  </div>
+</section>
+
+<section class="inquiry" style="padding-top:1rem;">
+  <div class="wrap">
+    <form class="inquiry-card" action="https://formspree.io/f/xqpzepgv" method="POST">
+      <input type="hidden" name="_subject" value="Inquiry: General (Contact page)">
+      <div class="field">
+        <label for="g-name">Your name</label>
+        <input id="g-name" type="text" name="name" required>
+      </div>
+      <div class="field">
+        <label for="g-email">Email</label>
+        <input id="g-email" type="email" name="email" required>
+      </div>
+      <div class="field">
+        <label for="g-service">Which service?</label>
+        <input id="g-service" type="text" name="service_area" placeholder="Construction, Electrical, or Digital">
+      </div>
+      <div class="field">
+        <label for="g-message">Message</label>
+        <textarea id="g-message" name="message" placeholder="Tell us what you need..."></textarea>
+      </div>
+      <button class="submit-btn" type="submit">Send message</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span class="logo"><span class="logo-mark">PT</span> PristineTech Biz Ltd</span>
+    <nav class="foot-links">
+      <a href="construction-renovation.html">Construction</a>
+      <a href="electrical-services.html">Electrical</a>
+      <a href="digital-services.html">Digital</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <span class="foot-note">© <span id="year"></span> PristineTech Biz Ltd</span>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
