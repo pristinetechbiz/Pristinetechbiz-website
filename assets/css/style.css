@@ -59,13 +59,9 @@ p{ margin:0; }
   background:rgba(11,13,16,.86); backdrop-filter:blur(10px);
   border-bottom:1px solid var(--line);
 }
-.site-header .wrap{ display:flex; align-items:center; justify-content:space-between; height:76px; }
-.logo{ display:flex; align-items:center; gap:.65em; font-family:var(--display); font-size:1.15rem; letter-spacing:.02em; }
-.logo-mark{
-  width:34px; height:34px; border-radius:8px;
-  background:linear-gradient(135deg,var(--brand),#8b5cf6);
-  display:grid; place-items:center; font-family:var(--mono); font-weight:600; font-size:.85rem; color:#fff;
-}
+.site-header .wrap{ display:flex; align-items:center; justify-content:space-between; height:124px; }
+.logo{ display:flex; align-items:center; gap:.7em; font-family:var(--display); font-size:1.15rem; letter-spacing:.02em; }
+.logo-img{ width:100px; height:100px; object-fit:contain; }
 nav.main-nav{ display:flex; gap:2rem; }
 nav.main-nav a{
   font-family:var(--mono); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
