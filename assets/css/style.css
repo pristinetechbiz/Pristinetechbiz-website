@@ -194,3 +194,42 @@ footer .foot-links{ display:flex; gap:1.5rem; font-family:var(--mono); font-size
 footer .foot-note{ font-family:var(--mono); font-size:.72rem; color:var(--ink-dim); }
 
 @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } * { transition:none !important; } }
+
+/* ---------- quotation calculator ---------- */
+.quote-section{ padding:1rem 0 4rem; }
+.quote-card{
+  background:var(--bg-panel); border:1px solid var(--line); border-radius:16px;
+  padding:2.4rem; max-width:640px;
+}
+.quote-form-row{ display:flex; gap:1rem; flex-wrap:wrap; align-items:flex-end; margin-top:1rem; }
+.quote-form-row .field{ flex:1; min-width:220px; }
+.quote-form-row select{
+  background:var(--bg); border:1px solid var(--line); border-radius:8px; color:var(--ink);
+  padding:.85em 1em; font-family:var(--body); font-size:.95rem; width:100%;
+}
+.quote-form-row select:focus{ outline:2px solid var(--brand); border-color:transparent; }
+.quote-form-row button{
+  font-family:var(--mono); font-size:.82rem; letter-spacing:.06em; text-transform:uppercase;
+  padding:.9em 1.6em; border-radius:6px; border:none; background:var(--elc-1); color:#0b0d10;
+  cursor:pointer; height:fit-content;
+}
+.quote-form-row button:hover{ filter:brightness(1.08); }
+
+#quote-result{ margin-top:2rem; }
+.quote-title{ font-size:1.3rem; margin-bottom:1rem; color:var(--elc-1); }
+.quote-table-wrap{ overflow-x:auto; }
+.quote-table{ width:100%; border-collapse:collapse; font-size:.88rem; }
+.quote-table th{
+  text-align:left; font-family:var(--mono); font-size:.7rem; letter-spacing:.06em; text-transform:uppercase;
+  color:var(--ink-dim); padding:.5em .6em; border-bottom:1px solid var(--line);
+}
+.quote-table td{ padding:.55em .6em; border-bottom:1px solid var(--line); }
+.quote-summary{ margin-top:1.4rem; display:grid; gap:.5rem; font-size:.92rem; }
+.quote-summary div{ display:flex; justify-content:space-between; color:var(--ink-dim); }
+.quote-summary .quote-final{
+  color:var(--ink); font-weight:700; font-size:1.15rem; margin-top:.4rem;
+  padding-top:.7rem; border-top:1px solid var(--line);
+}
+.quote-disclaimer{ font-size:.78rem; color:var(--ink-dim); margin-top:1rem; }
+#quote-whatsapp-btn{ margin-top:1.2rem; background:#25D366; border-color:#25D366; color:#fff; }
+
