@@ -61,7 +61,7 @@ p{ margin:0; }
 }
 .site-header .wrap{ display:flex; align-items:center; justify-content:space-between; height:124px; }
 .logo{ display:flex; align-items:center; gap:.7em; font-family:var(--display); font-size:1.15rem; letter-spacing:.02em; }
-.logo-img{ width:100px; height:100px; object-fit:contain; }
+.logo-img{ width:50px; height:50px; object-fit:contain; }
 nav.main-nav{ display:flex; gap:2rem; }
 nav.main-nav a{
   font-family:var(--mono); font-size:.78rem; letter-spacing:.08em; text-transform:uppercase;
