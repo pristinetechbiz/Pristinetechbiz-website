@@ -131,6 +131,9 @@ ul.service-list li::before{ content:'—'; color:var(--ink-dim); }
 
 .panel-visual{
   aspect-ratio:4/3; border-radius:14px; background:var(--bg-panel-2);
+   display:grid; place-items:center; color:var(--ink-dim);
+   font-family:var(--mono); font-size:.8rem; text-align:center; padding:2rem;
+}
  .mini-slider{
   position:relative; aspect-ratio:4/3; border-radius:14px; overflow:hidden;
   border:1px solid var(--line); background:var(--bg-panel-2);
