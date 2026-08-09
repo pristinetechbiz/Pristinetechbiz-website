@@ -52,10 +52,7 @@
         <div class="cta-row"><a class="btn btn-line" href="construction-renovation.html">View service &amp; gallery →</a></div>
       </div>
      <div class="mini-slider" id="construction-slider"></div>
-  <img src="assets/images/construction/IMG-20250523-WA0003.jpg" alt="Construction project 1">
-  <img src="assets/images/construction/construction.jpg" alt="Construction project 2">
-  <img src="assets/images/construction/IMG-20260212-WA0004.jpg" alt="Construction project 3">
-  <img src="assets/images/construction/electrical 2.jpg" alt="Construction project 4">
+ 
 </div>
     </div>
   </div>
@@ -65,10 +62,7 @@
   <div class="wrap panel-inner">
     <div class="panel-grid">
        <div class="mini-slider" id="electrical-slider"></div>
-  <img src="assets/images/electrical/Electrical-Engineering.jpg" alt="Electrical project 1">
-  <img src="assets/images/electrical/electrical 5.jpeg" alt="Electrical project 2">
-  <img src="assets/images/electrical/project 1.jpg" alt="Electrical project 3">
-  <img src="assets/images/electrical/IMG-20250507-WA0004.jpg" alt="Electrical project 4">
+
       <div style="order:1">
         <span class="eyebrow">ELC — Electrical Services</span>
         <h2>House Wiring<br>&amp; Fault Diagnosis</h2>
@@ -102,8 +96,7 @@
         <div class="cta-row"><a class="btn btn-line" href="digital-services.html">View service &amp; gallery →</a></div>
       </div>
        <div class="mini-slider" id="digital-slider"></div>
-  <img src="assets/images/digital/digital.jpeg" alt="Digital project 1">
-  <img src="assets/images/digital/digital 1.jpg" alt="Digital project 2">
+
 </div>
     </div>
   </div>
@@ -122,11 +115,25 @@
   </div>
 </footer>
 
-<script src="assets/js/script.js"></script>initSlider('construction-slider', [
-  { src: "aassets/images/construction/IMG-20250523-WA0003.jpg", alt: "Construction project 1" },
-  { src: "assets/images/construction/IMG-20260212-WA0004.jpg", alt: "Construction project 2" },
-  { src: "assets/images/construction/electrical 2.jpg", alt: "Construction project 3" },
+<script src="assets/js/script.js"></script>
+  initSlider('construction-slider', [
+  { src: "assets/images/construction/IMG-20250523-WA0003.jpg", alt: "Construction project 1" },
+  { src: "assets/images/construction/construction.jpg", alt: "Construction project 2" },
+  { src: "assets/images/construction/IMG-20260212-WA0004.jpg", alt: "Construction project 3" },
+  { src: "assets/images/construction/electrical 2.jpg", alt: "Construction project 4" },
 ]);
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+initSlider('electrical-slider', [
+  { src: "assets/images/electrical/Electrical-Engineering.jpg", alt: "Electrical project 1" },
+  { src: "assets/images/electrical/electrical 5.jpeg", alt: "Electrical project 2" },
+  { src: "assets/images/electrical/project 1.jpg", alt: "Electrical project 3" },
+  { src: "assets/images/electrical/IMG-20250507-WA0004.jpg", alt: "Electrical project 4" },
+]);
+initSlider('digital-slider', [
+  { src: "assets/images/digital/digital.jpeg", alt: "Digital project 1" },
+  { src: "assets/images/digital/digital 1.jpg", alt: "Digital project 2" },
+]);
+  
+  
+  script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
