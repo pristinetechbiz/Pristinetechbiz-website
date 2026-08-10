@@ -43,3 +43,25 @@ function initSlider(targetId, images, intervalMs = 3000) {
     imgs[current].classList.add('active');
   }, intervalMs);
 }
+function startSlider(id, dotsId, interval) {
+  const slides = document.querySelectorAll(`#${id} .slide`);
+  const dotsContainer = document.getElementById(dotsId);
+  slides.forEach((_, i) => {
+    const dot = document.createElement('div');
+    dot.className = 'dot' + (i === 0 ? ' active' : '');
+    dotsContainer.appendChild(dot);
+  });
+  const dots = dotsContainer.querySelectorAll('.dot');
+
+  let current = 0;
+  setInterval(() => {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }, interval);
+}
+
+startSlider('testimonial-slider', 'testimonial-dots', 4000);
+startSlider('badge-slider', 'badge-dots', 3000);
