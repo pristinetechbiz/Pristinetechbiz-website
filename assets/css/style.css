@@ -144,6 +144,10 @@ ul.service-list li::before{ content:'—'; color:var(--ink-dim); }
 }
 .mini-slider img.active{ opacity:1; }
 }
+.testimonials { padding: 40px 20px; text-align: center; }
+.testimonial-grid { display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; }
+.testimonial-card { background: #f7f7f7; border-radius: 8px; padding: 20px; max-width: 280px; }
+.testimonial-card span { display: block; margin-top: 10px; font-weight: 600; color: #555; }
 
 /* ---------- service page header ---------- */
 .service-hero{ padding:4rem 0 3rem; }
