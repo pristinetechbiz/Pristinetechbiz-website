@@ -43,6 +43,7 @@ function initSlider(targetId, images, intervalMs = 3000) {
     imgs[current].classList.add('active');
   }, intervalMs);
 }
+
 function startSlider(id, dotsId, interval) {
   const slides = document.querySelectorAll(`#${id} .slide`);
   const dotsContainer = document.getElementById(dotsId);
@@ -62,6 +63,5 @@ function startSlider(id, dotsId, interval) {
     dots[current].classList.add('active');
   }, interval);
 }
-
 startSlider('testimonial-slider', 'testimonial-dots', 4000);
 startSlider('badge-slider', 'badge-dots', 3000);
