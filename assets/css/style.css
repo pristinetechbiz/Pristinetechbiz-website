@@ -274,7 +274,7 @@ ul.service-list li::before{ content:'—'; color:var(--ink-dim); }
 }
 .submit-btn:hover{ filter:brightness(1.12); }
 .whatsapp-float{
-  position:fixed; bottom:24px; right:24px; z-index:60;
+  position:fixed; bottom:64px; right:24px; z-index:60;
   width:58px; height:58px; border-radius:50%;
   background:#25D366; display:grid; place-items:center;
   box-shadow:0 4px 14px rgba(0,0,0,.35);
@@ -282,6 +282,35 @@ ul.service-list li::before{ content:'—'; color:var(--ink-dim); }
 }
 .whatsapp-float:hover{ transform:scale(1.08); }
 .whatsapp-float svg{ width:30px; height:30px; }
+
+/* ---------- lower-third scrolling ticker ---------- */
+body { padding-bottom: 42px; }
+.lower-third {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #0d1b2a;
+  color: #fff;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 10px 0;
+  z-index: 50;
+}
+.lower-third__track {
+  display: inline-flex;
+  gap: 3rem;
+  animation: crawl 25s linear infinite;
+}
+.lower-third__track span {
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+@keyframes crawl {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
 /* ---------- footer ---------- */
 footer.site-footer{ border-top:1px solid var(--line); padding:3rem 0; margin-top:2rem; }
 footer.site-footer .wrap{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:1.5rem; align-items:center; }
