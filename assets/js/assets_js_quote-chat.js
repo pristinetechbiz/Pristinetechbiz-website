@@ -5,7 +5,7 @@
  * IMPORTANT: replace WORKER_URL below with your actual deployed Worker URL
  * from Cloudflare (looks like https://pristinetech-quote-bot.YOUR-SUBDOMAIN.workers.dev)
  */
-const WORKER_URL = "https://pristinetech-quote-bot.YOUR-SUBDOMAIN.workers.dev";
+const WORKER_URL = "https://pristinetech-quote-bot.pristinetechbiz.workers.dev/";
 
 let chatHistory = [];
 
