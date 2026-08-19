@@ -253,7 +253,35 @@ ul.service-list li::before{ content:'—'; color:var(--ink-dim); }
 .gallery-section{ padding:1rem 0 4rem; }
 .gallery-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(220px,1fr)); gap:1rem; margin-top:1.5rem; }
 .gallery-grid img{ width:100%; aspect-ratio:4/3; object-fit:cover; border-radius:10px; border:1px solid var(--line); }
+/* ---------- AI quote chat ---------- */
+.quote-chat-section{ padding:1rem 0 4rem; }
+.quote-chat-card{
+  background:var(--bg-panel); border:1px solid var(--line); border-radius:16px;
+  padding:1.6rem; max-width:640px; display:flex; flex-direction:column; height:520px;
+}
+#quote-chat-log{
+  flex:1; overflow-y:auto; display:flex; flex-direction:column; gap:.7rem; padding:.5rem .2rem 1rem;
+}
+.chat-bubble{
+  max-width:80%; padding:.75em 1em; border-radius:12px; font-size:.92rem; line-height:1.45; white-space:pre-wrap;
+}
+.chat-user{ align-self:flex-end; background:var(--brand); color:#fff; border-bottom-right-radius:3px; }
+.chat-assistant{ align-self:flex-start; background:var(--bg); border:1px solid var(--line); border-bottom-left-radius:3px; }
+.chat-typing{ color:var(--ink-dim); font-style:italic; }
 
+#quote-chat-form{ display:flex; gap:.6rem; border-top:1px solid var(--line); padding-top:1rem; }
+#quote-chat-input{
+  flex:1; background:var(--bg); border:1px solid var(--line); border-radius:8px; color:var(--ink);
+  padding:.8em 1em; font-family:var(--body); font-size:.92rem;
+}
+#quote-chat-input:focus{ outline:2px solid var(--brand); border-color:transparent; }
+#quote-chat-send{
+  font-family:var(--mono); font-size:.8rem; letter-spacing:.05em; text-transform:uppercase;
+  padding:.7em 1.3em; border-radius:6px; border:none; background:var(--elc-1); color:#0b0d10; cursor:pointer;
+}
+#quote-chat-send:disabled{ opacity:.5; cursor:default; }
+#quote-chat-send:not(:disabled):hover{ filter:brightness(1.08); }
+                 
 /* ---------- inquiry form ---------- */
 .inquiry{ padding:3rem 0 5rem; }
 .inquiry-card{
